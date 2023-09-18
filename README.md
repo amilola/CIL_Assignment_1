@@ -18,38 +18,33 @@ to a folder `/home/user/myS3backup`.
 ![arch.png](snapshots/Arch-Snapshot.png)
 
 > ## Cloud Formation
-> CloudFormation is an AWS service that implements.
-It allows users to define and provision AWS infrastructure resources using declarative JSON or YAML templates.
+> CloudFormation is an AWS service that allows users to define and provision AWS infrastructure resources using declarative JSON or YAML templates.
 > This allows the infrastructure to be treated as code which can be shared between developers and can be versioned and stored using 
-Version Control Systems (VCS). The main advantages of this is the reproducibility of the entire stack which can be torn down
-> and created with ease or have multiple versions of it created using parameterization for different stages such as dev and production.
-
-![img.png](snapshots/CFN-Template.png)
+Version Control Systems (VCS).
 
 > ## EC2 
 > Amazon Elastic Compute Cloud (EC2) provides compute capacity for users and other services in the AWS Cloud. It is a virtual machine
-> which can be provisioned with various operating systems and compute capacities as required. Creating EC2 instances in the cloud
-> allows for users to create only the number of instances they need and scale up or out quickly.
+> which can be provisioned with various operating systems and compute capacities as required. 
 
-![img_1.png](snapshots/EC2-Snapshot.png)
+![img.png](Instance.png)
 
 > ## IAM Role
 > An IAM Role is an AWS Identity that has permissions to perform specific actions. It is similar to an IAM User but is not uniquely associated with one
 > person. Instead, is it intended to be assumable by anyone or any services that needs to perform the actions the role allows.
 
-![img.png](snapshots/Role-Snapshot.png)
+![img.png](Roles.png)
 
 > ## S3
 > AWS Simple Storage Service (S3) is an object storage service.
 
-![img.png](snapshots/S3-Snapshot.png)
+![img.png](S3.png)
 
 > ## Python Script
 > The python script was written using the AWS SDK for python (Boto3).
 
 
-![img.png](snapshots/Python-Snapshot.png)
+![img.png](Python-file.png)
 
 > ## Cron
 > The python script was scheduled as 
-> 0 5 7 * * * python3 backup.py`. Which means it'll run at 5 minute intervals during the 7th hour every day, month and day of the week
+> 0 5 7 * * * python3 newfile.py`. Which means it'll run at 5 minute intervals during the 7th hour every day, month and day of the week
